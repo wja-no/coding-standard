@@ -1,6 +1,12 @@
 
 .prose figure img {
-	 max-width: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+.prose figure figcaption {
+	font-size: 14px;
+	color: rgb(50,50,50);
 }
 
 
@@ -13,5 +19,8 @@
 
 .prose figure.breakout {
 	margin-right: -300px; /* Should this go here? I don't know. */
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	float: right;
 }

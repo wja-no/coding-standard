@@ -1,0 +1,8 @@
+/* This file defines the basic typography of the entire site. */
+
+html {
+	font-family: "Fanwood Text", serif;
+	font-size: 18px;
+	lne-height: 25px;
+}
+

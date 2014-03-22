@@ -3,7 +3,10 @@
 
 
 /* Global styles */
-@import "global/elements.css";
+@import "global/base.css";
+@import "global/typography.css";
+
+
 
 
 /* Molecules */

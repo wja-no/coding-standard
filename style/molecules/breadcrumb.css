@@ -1,0 +1,10 @@
+
+nav.breadcrumb li {
+	display: inline;
+}
+
+nav.breadcrumb li:after {
+	display: inline;
+	content: " > ";
+}
+

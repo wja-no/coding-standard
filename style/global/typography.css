@@ -3,6 +3,8 @@
 html {
 	font-family: "Fanwood Text", serif;
 	font-size: 18px;
-	lne-height: 25px;
+	line-height: 25px;
+	background: white;
+	color: black;
 }
 

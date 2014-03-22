@@ -1,0 +1,17 @@
+
+.prose figure img {
+	 max-width: 100%;
+}
+
+
+.prose figure.landscape {
+	width: 575px; /* I don't know if this should be implied by grid classes on the element or not. */
+}
+
+
+/* Some figures will break out of their containing block to the right. */
+
+.prose figure.breakout {
+	margin-right: -300px; /* Should this go here? I don't know. */
+	float: right;
+}

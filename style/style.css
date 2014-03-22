@@ -7,11 +7,14 @@
 @import "global/typography.css";
 @import "global/grid.css";
 
-
-
-
-
 /* Molecules */
 @import "molecules/breadcrumb.css";
 @import "molecules/prose.css";
+@import "molecules/figure.css";
+
+
+/* Helper styles for development */
+@import "helper/gridlines.css";
+
+
 

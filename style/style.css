@@ -11,6 +11,8 @@
 @import "molecules/breadcrumb.css";
 @import "molecules/prose.css";
 @import "molecules/figure.css";
+@import "molecules/header.css";
+
 
 
 /* Helper styles for development */

@@ -1,0 +1,20 @@
+header {
+	background: #2e2d2d;
+	color: white;
+}
+
+
+header .logo img {
+	height: 50px;
+	margin: 25px 0;
+}
+
+
+
+header .menu li {
+	display: inline;
+}
+
+header .menu a {
+	color: white; 
+}

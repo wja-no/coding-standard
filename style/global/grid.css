@@ -14,3 +14,10 @@ html {
 	margin-left: 300px;
 }
 
+.breakout_right {
+	margin-right: -300px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	float: right;
+}

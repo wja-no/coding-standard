@@ -3,7 +3,7 @@ nav.breadcrumb li {
 	display: inline;
 }
 
-nav.breadcrumb li:after {
+nav.breadcrumb li + li:before {
 	display: inline;
 	content: " > ";
 }

@@ -4,12 +4,21 @@ header {
 }
 
 
+header .logo {
+	margin: 0;
+}
+
 header .logo img {
 	height: 50px;
 	margin: 25px 0;
 }
 
 
+
+header .menu ul {
+	margin: 0;
+	padding: 0;
+}
 
 header .menu li {
 	display: inline;

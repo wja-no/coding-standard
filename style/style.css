@@ -3,6 +3,7 @@
 
 
 /* Global styles */
+@import "global/normalize.css";
 @import "global/base.css";
 @import "global/typography.css";
 @import "global/grid.css";

@@ -1,4 +1,9 @@
 
+nav.breadcrumb ol {
+	margin: 0;
+	padding: 0;
+}
+
 nav.breadcrumb li {
 	display: inline;
 }

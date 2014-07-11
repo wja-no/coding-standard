@@ -1,0 +1,28 @@
+.dropdown, .dropdown select {
+    display: inline-block;
+}
+.dropdown {
+    width: 75px; /* Must be strictly lower than its child select-element */
+    overflow: hidden; /* Ensure that when the select-element deliberately overflows, the overflow (including the standard dropdown-button) is hidden.*/
+    background-image: url('dropdown.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right center;
+}
+
+.dropdown select {
+    width: 100px;
+    background-color: transparent; /*Necessary to reveal dropdown icon in the containing element*/
+    border: 3px solid black;
+
+    -webkit-appearance: none; /*Turns off default select-styling in said browsers */
+    -moz-appearance: none;
+
+    -webkit-border-radius: 0 0; /* Remove rounded corners in Chrome */
+
+    padding-left: 7px;
+}
+
+select::-ms:expand {
+    display: none; /* Turn off standard dropdown icon in IE */
+}

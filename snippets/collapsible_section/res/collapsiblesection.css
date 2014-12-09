@@ -1,0 +1,19 @@
+.collapsibleSection .heading button {
+    font: inherit;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.collapsibleSection .heading button:after {
+    content: " [-]";
+}
+
+.collapsibleSection.collapsed .heading button:after {
+    content: " [+]";
+}
+
+.collapsibleSection.collapsed .contents {
+    display: none;
+}

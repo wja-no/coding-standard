@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Filter</title>
+  </head>
+  <body>
+    <h1>Filter</h1>
+
+    <div class="_js-filter" data-filter-target="countries" hidden>
+      <fieldset data-filter-name="continent">
+        <legend>Continent</legend>
+        <div>
+          <label>
+            <input type="radio" name="continent" data-filter="europe">
+            Europe
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="continent" data-filter="asia">
+            Asia
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Flag colors</legend>
+        <div data-filter-name="red">
+          <label>
+            <input type="checkbox" data-filter="true">
+            Red
+          </label>
+        </div>
+        <div data-filter-name="yellow">
+          <label>
+            <input type="checkbox" data-filter="true">
+            Yellow
+          </label>
+        </div>
+        <div data-filter-name="blue">
+          <label>
+            <input type="checkbox" data-filter="true">
+            Blue
+          </label>
+        </div>
+        <div data-filter-name="white">
+          <label>
+            <input type="checkbox" data-filter="true">
+            White
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <ul id="countries">
+        <li data-filter-continent="asia"
+            data-filter-red="true"
+            data-filter-yellow="true">
+          China
+        </li>
+        <li data-filter-continent="europe"
+            data-filter-red="true"
+            data-filter-white="true">
+          Denmark
+        </li>
+        <li data-filter-continent="asia"
+            data-filter-red="true"
+            data-filter-white="true">
+          Japan
+        </li>
+        <li data-filter-continent="europe"
+            data-filter-red="true"
+            data-filter-blue="true"
+            data-filter-white="true">
+          Norway
+        </li>
+        <li data-filter-continent="europe"
+            data-filter-yellow="true"
+            data-filter-blue="true">
+          Sweden
+        </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="res/filter_jquery.js"></script>
+  </body>
+</html>

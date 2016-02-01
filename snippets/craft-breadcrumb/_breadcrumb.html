@@ -1,0 +1,31 @@
+{% macro render(entryOrCategory) %}
+    {% set urls = [siteUrl] %}
+    {% set slugs = entryOrCategory.getUrl()|replace(siteUrl, '')|split('/')|slice(0, -1) %}
+    {% set url = siteUrl|trim('/') %}
+    {% for slug in slugs %}
+        {% set url = url ~ '/' ~ slug %}
+        {% set urls = urls|merge([url]) %}
+    {% endfor %}
+    <nav>
+        <h2>{{ "Breadcrumb" }}</h2>
+        <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+            {% for url in urls %}
+                {% if loop.first %}
+                    {% set uri = '__home__' %}
+                {% else %}
+                    {% set uri = url|replace(siteUrl, '') %}
+                {% endif %}
+                {% set item = craft.entries.uri(uri)|first %}
+                {% if not item %}
+                    {% set item = craft.categories.uri(uri)|first %}
+                {% endif %}
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="{{ url }}" rel="v:url">
+                        <span itemprop="name">{{ item.title }}</span>
+                    </a>
+                    <meta itemprop="position" content="{{ loop.index }}">
+                </li>
+            {% endfor %}
+        </ol>
+    </nav>
+{% endmacro %}
